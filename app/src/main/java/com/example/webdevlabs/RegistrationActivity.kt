@@ -1,16 +1,18 @@
 package com.example.webdevlabs
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.registrationPasswordEditText)
         val repeatPasswordEditText = findViewById<EditText>(R.id.repeatPasswordEditText)
         val registerButton = findViewById<Button>(R.id.registerButton)
+        val openLoginTextView = findViewById<TextView>(R.id.openLoginTextView)
 
         var emailMode = true
 
@@ -54,6 +57,11 @@ class MainActivity : AppCompatActivity() {
             phoneModeButton.setTextColor(getColor(R.color.text_secondary))
         }
 
+        openLoginTextView.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
+
         registerButton.setOnClickListener {
             val contact = contactEditText.text.toString()
             val password = passwordEditText.text.toString()
@@ -67,6 +75,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, R.string.short_password, Toast.LENGTH_SHORT).show()
             } else if (password != repeatPassword) {
                 Toast.makeText(this, R.string.passwords_do_not_match, Toast.LENGTH_SHORT).show()
+            } else {
+                UserPreferences.saveCredentials(this, contact, password)
+                startActivity(Intent(this, ContentActivity::class.java))
+                finish()
             }
         }
     }
