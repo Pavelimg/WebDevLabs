@@ -36,39 +36,49 @@
             android:textColor="@color/text_secondary"
             android:textSize="16sp" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="@string/name_label"
-            android:textColor="@color/text_primary"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/nameEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/primary"
-            android:hint="@string/name_hint"
-            android:inputType="textCapWords"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/text_primary"
-            android:textColorHint="@color/text_hint"
-            android:textSize="16sp" />
+            <Button
+                android:id="@+id/phoneModeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/mode_unselected"
+                android:minHeight="44dp"
+                android:text="@string/phone_mode"
+                android:textAllCaps="false"
+                android:textColor="@color/text_secondary" />
+
+            <Button
+                android:id="@+id/emailModeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/primary"
+                android:minHeight="44dp"
+                android:text="@string/email_mode"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:text="@string/email_label"
+            android:text="@string/contact_label"
             android:textColor="@color/text_primary"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/registrationEmailEditText"
+            android:id="@+id/contactEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/primary"

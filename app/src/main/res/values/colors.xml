@@ -5,6 +5,7 @@
     <color name="screen_background">#FFF4F7FB</color>
     <color name="primary">#FF3457D5</color>
     <color name="primary_dark">#FF1E3A8A</color>
+    <color name="mode_unselected">#FFE4E7EC</color>
     <color name="text_primary">#FF172033</color>
     <color name="text_secondary">#FF667085</color>
     <color name="text_hint">#FF98A2B3</color>

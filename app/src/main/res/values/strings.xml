@@ -4,10 +4,12 @@
     <string name="login_subtitle">Войдите в свой аккаунт</string>
     <string name="create_account_title">Регистрация</string>
     <string name="registration_subtitle">Создайте новый аккаунт</string>
-    <string name="name_label">Имя</string>
-    <string name="name_hint">Введите имя</string>
     <string name="email_label">Электронная почта</string>
     <string name="email_hint">example@mail.ru</string>
+    <string name="phone_hint">+7 900 123-45-67</string>
+    <string name="phone_mode">По номеру</string>
+    <string name="email_mode">По email</string>
+    <string name="contact_label">Телефон или email</string>
     <string name="password_label">Пароль</string>
     <string name="password_hint">Введите пароль</string>
     <string name="repeat_password_label">Повторите пароль</string>
@@ -18,4 +20,8 @@
     <string name="register_button">Зарегистрироваться</string>
     <string name="no_account">Нет аккаунта? Зарегистрироваться</string>
     <string name="already_have_account">Уже есть аккаунт? Войти</string>
+    <string name="invalid_email">Email должен содержать символ @</string>
+    <string name="invalid_phone">Номер телефона должен содержать символ +</string>
+    <string name="short_password">Пароль должен содержать минимум 8 символов</string>
+    <string name="passwords_do_not_match">Пароли не совпадают</string>
 </resources>
