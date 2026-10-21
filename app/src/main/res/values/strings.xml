@@ -30,4 +30,7 @@
     <string name="content_description">Это четвёртый экран — ContentActivity</string>
     <string name="logout">Выйти</string>
     <string name="logout_and_reset">Выйти и сбросить настройки</string>
+    <string name="first_fragment_title">Рейтинг камер</string>
+    <string name="settings_title">Настройки</string>
+    <string name="settings_description">Управление входом в приложение</string>
 </resources>
