@@ -33,4 +33,7 @@
     <string name="first_fragment_title">Рейтинг камер</string>
     <string name="settings_title">Настройки</string>
     <string name="settings_description">Управление входом в приложение</string>
+    <string name="phone_price">Цена на старте: %1$s</string>
+    <string name="phone_date">Дата выхода: %1$s</string>
+    <string name="phone_score">Оценка камеры: %1$s</string>
 </resources>
